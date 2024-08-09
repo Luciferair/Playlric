@@ -14,7 +14,7 @@ function App() {
   const handleSearch = async (query) => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8000/videos/search/', {
+      const response = await fetch('http://13.60.221.235/videos/search/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ function App() {
   const handleSongSelect = async (song) => {
     setMusicLoad(true);
     try {
-      const response = await fetch('http://localhost:8000/videos/download/', {
+      const response = await fetch('http://13.60.221.235/videos/download/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
